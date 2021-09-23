@@ -2,9 +2,16 @@ package main
 
 import (
 	"fmt"
-	"net/http"
+
+	"github.com/nodata-brain/get_url_img/pkg"
 )
 
 func main() {
-	fmt.Println("sample")
+
+	err := guri.New()
+	if err != nil {
+		fmt.Println(err)
+		return
+	}
+	fmt.Println("success")
 }
