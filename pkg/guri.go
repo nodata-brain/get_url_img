@@ -45,7 +45,7 @@ func New() error {
 			continue
 		}
 		img, _, _ := image.Decode(bytes.NewReader(imgByte))
-		file, err := os.Create("./img/img_" + strconv.Itoa(i) + ".png")
+		file, err := os.Create("./img/" + strconv.Itoa(i) + ".png")
 		if err != nil {
 			log.Println(err)
 			continue
