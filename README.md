@@ -1,2 +1,2 @@
-# go_templete
-go_template  a repository template for go.
+# get_url_img
+input get_url → output img
